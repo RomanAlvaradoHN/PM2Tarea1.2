@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2Tarea1._2.Views.PageResults"
+             Title="Datos Recibidos">
+
+
+    <StackLayout Padding="30" Spacing="10">
+
+        <Image
+            Source="ok.png"
+            HeightRequest="200"
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill">
+        </Image>
+
+        <Frame CornerRadius="10" Padding="10">
+            <StackLayout>
+                <Label Text="Nombres:" FontSize="Default" FontAttributes="None" TextColor="LightGray"/>
+                <Label x:Name="txtNombres" Text="{Binding Nombres}"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="10">
+            <StackLayout>
+                <Label Text="Apellidos:" FontSize="Default" FontAttributes="None" TextColor="LightGray"/>
+                <Label x:Name="txtApellidos" Text="{Binding Apellidos}"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="10">
+            <StackLayout>
+                <Label Text="Fecha de Nacimiento:" FontSize="Default" FontAttributes="None" TextColor="LightGray"/>
+                <Label x:Name="dateFechaNac" Text="{Binding FechaNacimiento}"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="10">
+            <StackLayout>
+                <Label Text="Correo:" FontSize="Default" FontAttributes="None" TextColor="LightGray"/>
+                <Label x:Name="txtCorreo" Text="{Binding Correo}"/>
+            </StackLayout>
+        </Frame>
+
+
+
+    </StackLayout>
+</ContentPage>

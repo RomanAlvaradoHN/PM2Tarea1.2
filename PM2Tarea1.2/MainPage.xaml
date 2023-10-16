@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2Tarea1._2.MainPage"
+             Title="Tarea 1.2">
+
+
+    <StackLayout Padding="30" Spacing="10">
+
+        <Frame CornerRadius="20" Padding="0">
+            <Image
+                Source="uth_img.jpg"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill">
+            </Image>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="5">
+            <Entry x:Name="txtNombres" Placeholder="Ingrese Nombres" Keyboard="Text"/>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="5">
+            <Entry x:Name="txtApellidos" Placeholder="Ingrese Apellidos" Keyboard="Text"/>
+        </Frame>
+
+
+        <Frame CornerRadius="10" Padding="5">
+            <StackLayout>
+                <Label Text="Fecha de Nacimiento:" FontSize="Default" FontAttributes="None" TextColor="LightGray"/>
+                <DatePicker x:Name="dateFechaNac"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="5">
+            <Entry x:Name="txtCorreo" Placeholder="Ingrese Email" Keyboard="Email"/>
+        </Frame>
+
+
+        <Button
+            x:Name="btnEnviarDatos"
+            Text="Enviar Datos"
+            Clicked="OnBtnEnviarDatosClicked"
+            HorizontalOptions="Fill">
+        </Button>
+
+
+    </StackLayout>
+
+</ContentPage>
